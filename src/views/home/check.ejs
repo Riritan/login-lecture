@@ -1,0 +1,17 @@
+<!-- check.ejs (뷰 파일) -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User List</title>
+</head>
+<body>
+  <h1>User List</h1>
+  <ul>
+    <% userList.forEach(user => { %>
+      <li><%= user.회원아이디 %> -   <%= user.회원비밀번호 %>-<%= user.회원이름 %> - <%= user.생년월일 %> - <%= user.전화번호 %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

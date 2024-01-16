@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>book List</title>
+</head>
+<body>
+  <h1>book List</h1>
+  <ul>
+    <% bookList.forEach(user => { %>
+      <li><%= user.도서번호%> - <%= user.책제목 %> - <%= user.저자 %> - <%= user.출판사 %> - <%= user.ISBN %></li>
+    <% }); %>
+  </ul>
+</body>
+</html>

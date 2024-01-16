@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "body-parser": "^1.20.2",
     "ejs": "^3.1.9",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mysql2": "^3.7.0"
   },
   "name": "practice",
   "version": "1.0.0",
@@ -9,17 +11,15 @@
   "bin": {
     "practice": "bin/www.js"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "node ./bin/www.js",
+    "start": "nodemon ./bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "description": "",
   "repository": {
-    "type":"git",
+    "type": "git",
     "url": ""
-  
   }
 }
